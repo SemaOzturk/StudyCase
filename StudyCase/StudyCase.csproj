@@ -1,0 +1,21 @@
+<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>net5.0</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="MediatR.Extensions.Microsoft.DependencyInjection" Version="9.0.0" />
+    <PackageReference Include="Microsoft.AspNetCore.Authentication.JwtBearer" Version="5.0.0" NoWarn="NU1605" />
+    <PackageReference Include="Microsoft.AspNetCore.Authentication.OpenIdConnect" Version="5.0.0" NoWarn="NU1605" />
+    <PackageReference Include="Swashbuckle.AspNetCore" Version="5.6.3" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\StudyCase.Application\StudyCase.Application.csproj" />
+    <ProjectReference Include="..\StudyCase.Contract\StudyCase.Contract.csproj" />
+    <ProjectReference Include="..\StudyCase.Domain.CQ\StudyCase.Domain.CQ.csproj" />
+    <ProjectReference Include="..\StudyCase.Domain\StudyCase.Domain.csproj" />
+  </ItemGroup>
+
+</Project>

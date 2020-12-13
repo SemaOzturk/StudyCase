@@ -1,0 +1,16 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp3.1</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="MassTransit.RabbitMQ" Version="7.0.7" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\StudyCase.Application\StudyCase.Application.csproj" />
+    <ProjectReference Include="..\StudyCase.Repository\StudyCase.Repository.csproj" />
+  </ItemGroup>
+
+</Project>
